@@ -12,11 +12,11 @@ page 58, modify the following three methods:
 
  public function get($key, $userid, $default=null)	{
  
-	 if (!$this- > _isValidService())	{
+	 if (!$this->_isValidService())	{
 		throw new Exception\Service("Not connected to a valid service");
 	 }
 	 
-	 $value = $this- >_service-> get($key . $userid, MEMCACHE_COMPRESSED);
+	 $value = $this->_service->get($key . $userid, MEMCACHE_COMPRESSED);
 	 
 	 if ($value)	{
 		return $value;
@@ -27,11 +27,11 @@ page 58, modify the following three methods:
  
  public function set($key, $userid, $value, $duration = 120)	{
  
-	 if (!$this- >_isValidService())	{
+	 if (!$this->_isValidService())	{
 		throw new Exception\Service("Not connected to a valid service");
 	 }
 	 
-	 $this->_service- >set($key . $userid, $value, MEMCACHE_COMPRESSED, $duration);
+	 $this->_service->set($key . $userid, $value, MEMCACHE_COMPRESSED, $duration);
 	 
 	 return $this;
  }

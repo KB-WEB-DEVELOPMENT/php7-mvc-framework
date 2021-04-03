@@ -6,7 +6,9 @@ PHP 7 MVC Framework Project
 
   To do so, I studied the book "Pro PHP MVC" (2012) by Chris Pitt - Apress Media LLC (Springer Nature).
 
-The book can be read and downloaded here : https://www.dropbox.com/s/nxq0keypo9r0rkd/Pro%20PHP%20MVC.pdf?dl=0
+The book can be read and downloaded here : 
+
+https://www.dropbox.com/s/nxq0keypo9r0rkd/Pro%20PHP%20MVC.pdf?dl=0
 
 The objectives were : 
 

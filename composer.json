@@ -1,5 +1,5 @@
 {
-    "name": "KB-WEB-DEVELOPMENT/php7-mvc",
+    "name": "KB-WEB-DEVELOPMENT/php7-mvc-framework",
     "description": "PHP 7 MVC framework",
     "version": "0.1.0",
     "type": "project",
@@ -18,9 +18,9 @@
     "autoload": {
         "psr-4": {
             "Framework\\": "src/framework",
-			      "Shared\\": "src/application/libraries/shared",
-			      "Fonts\\": "src/application/libraries/fonts",
-			      "Imagine\\": "src/application/libraries/imagine"
+            "Shared\\": "src/application/libraries/shared",
+            "Fonts\\": "src/application/libraries/fonts",
+            "Imagine\\": "src/application/libraries/imagine"
         }
     }
 }

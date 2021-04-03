@@ -25,26 +25,44 @@ Scalar type hints
 Return type hints
 
 Anonymous classes
+
 Generator delegation
+
 Generator return expressions
+
 The null coalesce operator
+
+
 The spaceship operator
+
 Constant array
+
 Uniform variable syntax
+
 Throwables
+
 Group use declarations
+
 Class constant visibility modifiers
+
 Catching multiple exceptions types
+
 Iterable pseudo-type
+
 Nullable types
+
 Void return types 
 
 Some detailed explanations of the new features of PHP version 7 (i.e; versions 7.1,7.2,7.3,7.4)
 
 https://www.php.net/manual/en/migration70.new-features.php
+
 https://www.php.net/manual/en/migration71.new-features.php
+
 https://www.php.net/manual/en/migration72.new-features.php
+
 https://www.php.net/manual/en/migration73.new-features.php
+
 https://www.php.net/manual/en/migration74.new-features.php
 
 (Some of the major changes between the book code and the framework version here involve both the naming and use of namespaces as well as the use of composer.json

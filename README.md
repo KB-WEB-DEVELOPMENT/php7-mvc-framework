@@ -20,38 +20,37 @@ For (1), the exercises are written using PHP version 5.4
 
 For (2), the major features of PHP 7 include :
 
-Scalar type hints
+- Scalar type hints
 
-Return type hints
+- Return type hints
 
-Anonymous classes
+- Anonymous classes
 
-Generator delegation
+- Generator delegation
 
-Generator return expressions
+- Generator return expressions
 
-The null coalesce operator
+- The null coalesce operator
 
+- The spaceship operator
 
-The spaceship operator
+- Constant array
 
-Constant array
+- Uniform variable syntax
 
-Uniform variable syntax
+- Throwables
 
-Throwables
+- Group use declarations
 
-Group use declarations
+- Class constant visibility modifiers
 
-Class constant visibility modifiers
+- Catching multiple exceptions types
 
-Catching multiple exceptions types
+- Iterable pseudo-type
 
-Iterable pseudo-type
+- Nullable types
 
-Nullable types
-
-Void return types 
+- Void return types 
 
 Some detailed explanations of the new features of PHP version 7 (i.e; versions 7.1,7.2,7.3,7.4)
 

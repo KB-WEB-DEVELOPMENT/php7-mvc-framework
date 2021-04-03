@@ -1,0 +1,26 @@
+{
+    "name": "KB-WEB-DEVELOPMENT/php7-mvc",
+    "description": "PHP 7 MVC framework",
+    "version": "0.1.0",
+    "type": "project",
+    "keywords": ["php 7", "mvc", "framework"],
+    "homepage": "http://www.kamibarut.de",
+    "time": "03-04-2021",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kâmi Barut-Wanayo",
+            "email": "kamibarut@yahoo.com",
+            "homepage": "http://www.kamibarut.de",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "src/framework",
+			      "Shared\\": "src/application/libraries/shared",
+			      "Fonts\\": "src/application/libraries/fonts",
+			      "Imagine\\": "src/application/libraries/imagine"
+        }
+    }
+}

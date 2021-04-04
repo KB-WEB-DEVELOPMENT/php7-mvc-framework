@@ -13,7 +13,7 @@ namespace Imagine\Image\Fill\Gradient;
 
 use Imagine\Image\PointInterface;
 
-final class Horizontal extends Linear
+final class Vertical extends Linear
 {
     /**
      * (non-PHPdoc)
@@ -21,6 +21,6 @@ final class Horizontal extends Linear
      */
     public function getDistance(PointInterface $position)
     {
-        return $position->getX();
+        return $position->getY();
     }
 }

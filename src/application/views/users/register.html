@@ -1,54 +1,46 @@
-<h1>Edit User</h1>
+<h1>Register</h1>
 {if isset($success)}
-    The user has been updated!
+    Your account has been created!
 {/if}
 {else}
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         <ol>
             <li>
                 <label>
                     First name:
-                    <input type="text" name="first" value="{echo $user->first}" />
+                    <input type="text" name="first" />
                     {echo Shared\Markup::errors($errors, "first")}
                 </label>
             </li>
             <li>
                 <label>
                     Last name:
-                    <input type="text" name="last" value="{echo $user->last}" />
+                    <input type="text" name="last" />
                     {echo Shared\Markup::errors($errors, "last")}
                 </label>
             </li>    
             <li>
                 <label>
                     Email:
-                    <input type="text" name="email" value="{echo $user->email}" />
+                    <input type="text" name="email" />
                     {echo Shared\Markup::errors($errors, "email")}
                 </label>
             </li>
             <li>
                 <label>
                     Password:
-                    <input type="password" name="password" value="{echo $user->password}" />
+                    <input type="password" name="password" />
                     {echo Shared\Markup::errors($errors, "password")}
                 </label>
             </li>
             <li>
                 <label>
-                    Live:
-                    <input type="checkbox" name="live" {if $user->live} 
-checked="checked"{/if} />
+                    Photo:
+                    <input type="file" name="photo" />
                 </label>
             </li>
             <li>
-                <label>
-                    Admin:
-                    <input type="checkbox" name="admin" {if $user->admin} 
-checked="checked"{/if} />
-                </label>
-            </li>
-            <li>
-                <input type="submit" name="save" value="save" />
+                <input type="submit" name="register" value="register" />
             </li>
         </ol>
     </form>

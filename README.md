@@ -54,7 +54,7 @@ For (2), the major features of PHP 7 include :
 
 - Void return types 
 
-Some detailed explanations of the new features of PHP version 7 (i.e; versions 7.1,7.2,7.3,7.4)
+Some detailed explanations of the new features of PHP version 7 (i.e; versions 7.1,7.2,7.3,7.4) :
 
 https://www.php.net/manual/en/migration70.new-features.php
 

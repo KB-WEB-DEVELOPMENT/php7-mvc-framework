@@ -1,7 +1,9 @@
 <?php
 declare(strict_types=1);
 
-    class Model extends \Framework\Model
+use Framework\Model as ModelB;
+
+    class Model extends ModelB
     {
         /**
         * @column

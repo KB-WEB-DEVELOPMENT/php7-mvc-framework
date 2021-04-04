@@ -4,7 +4,7 @@ PHP 7 MVC Framework Project
 
   The purpose of the project was to study the inner workings of a self-built PHP MVC (Model-View-Controller) framework.
 
-  To do so, I studied the book "Pro PHP MVC" (2012) by Chris Pitt - Apress Media LLC (Springer Nature).
+  To do so, I studied the book <b>"Pro PHP MVC" (2012) by Chris Pitt - Apress Media LLC (Springer Nature) </b>.
 
 The book can be read and downloaded here : 
 

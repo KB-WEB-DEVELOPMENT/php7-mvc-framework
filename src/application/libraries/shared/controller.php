@@ -1,10 +1,11 @@
 <?php
 declare(strict_types=1);
 
+use Framework\Controller as ControllerB
 use Framework\Events as Events;
 use Framework\Registry as Registry;
 
-class Controller extends \Framework\Controller
+class Controller extends ControllerB
 {
     /**
     * @readwrite
@@ -60,7 +61,7 @@ class Controller extends \Framework\Controller
     {
         parent::__construct($options);
 
-        $database = \Framework\Registry::get("database");
+        $database = Registry::get("database");
         $database->connect();
 
         // schedule: load user from session

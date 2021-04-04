@@ -16,7 +16,7 @@ The objectives were :
 
 (2) Considering that the PHP version at the time of writing was PHP version 5.4, go over the entire framework code 
 
-and rewrite it following the features of PHP 7 wherever possible.
+and rewrite it following the features of PHP 7 wherever possible maintaining code readability.
 
 For (1), the exercises are written using PHP version 5.4
 

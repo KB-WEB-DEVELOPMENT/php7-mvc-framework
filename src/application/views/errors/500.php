@@ -4,7 +4,7 @@
         <title>Social Network</title>
     </head>
     <body>
-        error 404
+        error 500
         <?php if (DEBUG): ?>
             <pre><?php print_r($e); ?></pre>
         <?php endif; ?>

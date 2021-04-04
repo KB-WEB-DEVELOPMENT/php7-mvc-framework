@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 use Framework\Core\Exception as Exception;
 
-class Argument extends Exception
+class Property extends Exception
 {
 
 }

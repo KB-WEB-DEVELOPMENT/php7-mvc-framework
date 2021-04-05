@@ -1,12 +1,16 @@
 <?php
+declare(strict_types=1);
+
+use Framework\Test as Test;
+use Framework\Request as Request;
 
 $post = function($url, $data)
 {
-    $request = new Framework\Request();
+    $request = new Request();
     return $request->post("http://".$_SERVER["HTTP_HOST"]."/{$url}", $data);
 };
 
-Framework\Test::add(
+   Test::add(
     function() use ($post)
     {
         $html = $post(
@@ -26,7 +30,7 @@ Framework\Test::add(
     "Functions/Users"
 );
 
-Framework\Test::add(
+  Test::add(
     function() use ($post)
     {
         $html = $post(

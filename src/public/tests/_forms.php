@@ -1,8 +1,12 @@
 <?php
+declare(strict_types=1);
+
+use Framework\Request as Request;
+use Framework\Test as Test;
 
 $get = function($url)
 {
-    $request = new Framework\Request();
+    $request = new Request();
     return $request->get("http://".$_SERVER["HTTP_HOST"]."/{$url}");
 };
 
@@ -19,7 +23,7 @@ $has = function($html, $fields)
     return true;
 };
 
-Framework\Test::add(
+  Test::add(
     function() use ($get, $has)
     {
         $html = $get("register.html");
@@ -38,7 +42,7 @@ Framework\Test::add(
     "Forms/Users"
 );
 
-Framework\Test::add(
+  Test::add(
     function() use ($get, $has)
     {
         $html = $get("login.html");
@@ -54,7 +58,7 @@ Framework\Test::add(
     "Forms/Users"
 );
 
-Framework\Test::add(
+  Test::add(
     function() use ($get, $has)
     {
         $html = $get("search.html");

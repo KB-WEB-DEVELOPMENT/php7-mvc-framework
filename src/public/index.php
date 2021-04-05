@@ -12,7 +12,7 @@ define("APP_PATH", dirname(__DIR__));
 
 try
 {
-    // step #1 : load all Imagince classes
+    // step #1 : load all Imagine classes
 
     spl_autoload_register(function($class){
 
@@ -53,22 +53,22 @@ try
     $configuration = new Configuration(array(
         "type" => "ini"
     ));
-    Framework\Registry::set("configuration", $configuration->initialize());
+    Registry::set("configuration", $configuration->initialize());
 
     // step #4: instantiate Database class, initialize Database settings and save in Registry
 
     $database = new Database();
-    Framework\Registry::set("database", $database->initialize());
+    Registry::set("database", $database->initialize());
 
     // step #5: instantiate Cache class, initialize Cache settings and save in Registry
 
     $cache = new Cache();
-    Framework\Registry::set("cache", $cache->initialize());
+    Registry::set("cache", $cache->initialize());
 
     // step #6: instantiate Session class, initialize Session settings and save in Registry
 
     $session = new Session();
-    Framework\Registry::set("session", $session->initialize());
+    Registry::set("session", $session->initialize());
 
     // step #7: instantiate Router class, get Request data and save in Registry
 
@@ -76,7 +76,7 @@ try
         "url" => $_GET["url"]) ?? "index/index",
         "extension" => $_GET["url"]) ?? "html"
     ));
-    Framework\Registry::set("router", $router);
+    Registry::set("router", $router);
 
     // step #8: include all routes
 

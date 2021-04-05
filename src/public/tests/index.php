@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+use Framework\Test as Test;
 use Framework\Database as Database;
 
 define("APP_PATH", dirname(dirname(dirname(__FILE__))));
@@ -31,7 +32,7 @@ $database = $database->connect();
 
 // execute tests
 
-$results = Framework\Test::run(
+$results = Test::run(
     // setup
     function() use ($database){
         // do nothing

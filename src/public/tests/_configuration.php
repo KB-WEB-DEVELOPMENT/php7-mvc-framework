@@ -1,11 +1,12 @@
 <?php
 declare(strict_types=1);
 
+use Framework\Test as Test;
 use Framework\Configuration as Configuration;
 use Framework\Configuration\Driver\Ini as Ini;
 
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $configuration = new Configuration();
@@ -15,7 +16,7 @@ Framework\Test::add(
     "Configuration"
 );
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $configuration = new Configuration(array(
@@ -29,7 +30,7 @@ Framework\Test::add(
     "Configuration\Driver\Ini"
 );
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $configuration = new Configuration(array(

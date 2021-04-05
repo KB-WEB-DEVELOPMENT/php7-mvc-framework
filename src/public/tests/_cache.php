@@ -1,11 +1,12 @@
 <?php
 declare(strict_types=1);
 
+use Framework\Test as Test
 use Framework\Cache as Cache;
 use Framework\Cache\Driver\Memcached as Memcached;
 use Framework\Cache\Exception\Service as Service;
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $cache = new Cache();
@@ -15,7 +16,7 @@ Framework\Test::add(
     "Cache"
 );
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $cache = new Cache(array(
@@ -29,7 +30,7 @@ Framework\Test::add(
     "Cache\Driver\Memcached"
 );
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $cache = new Cache(array(
@@ -43,7 +44,7 @@ Framework\Test::add(
     "Cache\Driver\Memcached"
 );
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $cache = new Cache(array(
@@ -69,7 +70,7 @@ Framework\Test::add(
     "Cache\Driver\Memcached"
 );
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $cache = new Cache(array(
@@ -85,7 +86,7 @@ Framework\Test::add(
     "Cache\Driver\Memcached"
 );
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $cache = new Cache(array(
@@ -101,7 +102,7 @@ Framework\Test::add(
     "Cache\Driver\Memcached"
 );
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $cache = new Cache(array(
@@ -117,7 +118,7 @@ Framework\Test::add(
     "Cache\Driver\Memcached"
 );
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $cache = new Cache(array(
@@ -135,7 +136,7 @@ Framework\Test::add(
     "Cache\Driver\Memcached"
 );
 
-Framework\Test::add(
+Test::add(
     function()
     {
         $cache = new Cache(array(
